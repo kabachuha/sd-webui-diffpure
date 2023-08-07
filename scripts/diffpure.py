@@ -143,9 +143,9 @@ class Script(scripts.Script):
             gr.Markdown('Please check the [LICENSE](https://github.com/NVlabs/DiffPure/blob/master/LICENSE) file. This work may be used non-commercially, meaning for research or evaluation purposes only. For business inquiries, please contact researchinquiries@nvidia.com.')
 
     def run(self, p):
-        print(f"😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳")
+        print(f"😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳")
         print(f"😳\033[4;33m DiffPure extension for Auto1111's webui\033[0m😳")
-        print(f"😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳")
+        print(f"😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳😳")
         print("Initialazing")
 
         if shared.sd_model is not None:
