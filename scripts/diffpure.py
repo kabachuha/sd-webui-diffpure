@@ -62,9 +62,9 @@ def get_version():
 
 from runners.diffpure_ddpm import Diffusion
 from runners.diffpure_guided import GuidedDiffusion
-from runners.diffpure_sde import RevGuidedDiffusion
-from runners.diffpure_ode import OdeGuidedDiffusion
-from runners.diffpure_ldsde import LDGuidedDiffusion
+#from runners.diffpure_sde import RevGuidedDiffusion
+#from runners.diffpure_ode import OdeGuidedDiffusion
+#from runners.diffpure_ldsde import LDGuidedDiffusion
 
 class SDE_Adv_Model(nn.Module):
     def __init__(self, args, config):
@@ -75,14 +75,14 @@ class SDE_Adv_Model(nn.Module):
         print(f'diffusion_type: {args.diffusion_type}')
         if args.diffusion_type == 'ddpm':
             self.runner = GuidedDiffusion(args, config, device=config.device)
-        elif args.diffusion_type == 'sde':
-            self.runner = RevGuidedDiffusion(args, config, device=config.device)
-        elif args.diffusion_type == 'ode':
-            self.runner = OdeGuidedDiffusion(args, config, device=config.device)
-        elif args.diffusion_type == 'ldsde':
-            self.runner = LDGuidedDiffusion(args, config, device=config.device)
-        elif args.diffusion_type == 'celebahq-ddpm':
-            self.runner = Diffusion(args, config, device=config.device)
+        #elif args.diffusion_type == 'sde':
+        #    self.runner = RevGuidedDiffusion(args, config, device=config.device)
+        #elif args.diffusion_type == 'ode':
+        #    self.runner = OdeGuidedDiffusion(args, config, device=config.device)
+        #elif args.diffusion_type == 'ldsde':
+        #    self.runner = LDGuidedDiffusion(args, config, device=config.device)
+        #elif args.diffusion_type == 'celebahq-ddpm':
+        #    self.runner = Diffusion(args, config, device=config.device)
         else:
             raise NotImplementedError('unknown diffusion type')
 
