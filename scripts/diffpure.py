@@ -177,7 +177,7 @@ class Script(scripts.Script):
 
         # Just grab the first one
         for f in os.listdir(models_path):
-            if f.endswith('.yaml'):
+            if f.endswith('.yaml') or f.endswith('.yml'):
                 cfg_file = os.path.join(models_path, f)
                 break
         assert cfg_file is not None
