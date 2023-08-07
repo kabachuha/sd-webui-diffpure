@@ -8,7 +8,7 @@
 
 ## How to use?
 
-Go to img2img tab, select the DiffPure script. Download a model and a config from the links referenced there. Drop your picture with adversarial noise into the image input window and then just run the img2img process.
+Go to img2img tab, select the DiffPure script. Download a model and a config from the links referenced there and put them to 'stable-diffusion-webui/models/DiffPure'. Drop your picture with adversarial noise into the image input window and then just run the img2img process.
 
 ## Info
 
