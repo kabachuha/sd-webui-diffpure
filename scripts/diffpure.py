@@ -235,7 +235,7 @@ class Script(scripts.Script):
 
         print('Transforming the images to a suitable format')
 
-        image_size = config.model.image_size
+        image_size = config.model['image_size']
 
         mean = [0.485, 0.456, 0.406]
         std = [0.229, 0.224, 0.225]
