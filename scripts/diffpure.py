@@ -74,7 +74,7 @@ class SDE_Adv_Model(nn.Module):
         # diffusion model
         print(f'diffusion_type: {args.diffusion_type}')
         if args.diffusion_type == 'ddpm':
-            self.runner = GuidedDiffusion(args, config, device=config.device)
+            self.runner = GuidedDiffusion(args, config, device=config.device, model_dir=os.path.join(ph.models_path, 'DiffPure'))
         #elif args.diffusion_type == 'sde':
         #    self.runner = RevGuidedDiffusion(args, config, device=config.device)
         #elif args.diffusion_type == 'ode':
