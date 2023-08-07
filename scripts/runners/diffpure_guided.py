@@ -25,7 +25,7 @@ class GuidedDiffusion(torch.nn.Module):
 
         # load model
         model_config = model_and_diffusion_defaults()
-        model_config.update(vars(self.config.model))
+        model_config.update(self.config.model)
         print(f'model_config: {model_config}')
         model, diffusion = create_model_and_diffusion(**model_config)
         model.load_state_dict(torch.load(f'{model_dir}/256x256_diffusion_uncond.pt', map_location='cpu'))
