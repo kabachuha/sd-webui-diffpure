@@ -12,6 +12,7 @@ torchdiffeq
 timm
 lmdb
 Ninja
+ninja
 foolbox
 torchsde
 git+https://github.com/RobustBench/robustbench.git
