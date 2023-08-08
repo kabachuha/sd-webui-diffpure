@@ -157,7 +157,7 @@ class Script(scripts.Script):
             except Exception as e:
                 pass
             # the following command actually frees the GPU vram from the sd.model, no need to do del shared.sd_model 22-05-23
-            shared.sd_model = None
+            #shared.sd_model = None
             print('SD unloaded')
         gc.collect()
         devices.torch_gc()
@@ -262,7 +262,7 @@ class Script(scripts.Script):
 
             img = transform_back(img.squeeze(0))
 
-            output_images += img
+            output_images.append(img)
 
         print('Processed! Have a cake 🥰')
 
