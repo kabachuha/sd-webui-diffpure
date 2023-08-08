@@ -4,13 +4,15 @@
 
 **Auto1111** port of NVlab's adversarial purification method that uses the forward and reverse processes of diffusion models to remove adversarial perturbations.
 
-![EjQg3SmkKAc](https://github.com/kabachuha/sd-webui-diffpure/assets/14872007/9daede00-8e20-4915-a3eb-c2e636bdaf44)
+It removes adversarial noise by rediffusing the image using promptless guided diffusion, but comes at the cost of either using a realism-inclined pretrained model or necessity to train your own model on pairs of normal/adversarial noised image pairs.
 
-Sort of working
+![pic](https://github.com/kabachuha/sd-webui-diffpure/assets/14872007/5fa0b148-d344-40a6-a163-3eb2caeaef40)
+
+![tmp4rldv2cb](https://github.com/kabachuha/sd-webui-diffpure/assets/14872007/6411b615-c7d9-4a6f-bcc7-6a39ea0f79e9)
 
 ## How to use?
 
-Go to img2img tab, select the DiffPure script. Download a model and a config from the links referenced there and put them to 'stable-diffusion-webui/models/DiffPure'. Drop your picture with adversarial noise into the image input window and then just run the img2img process.
+Go to img2img tab, select the DiffPure script. Download a model and a config from the links referenced there and put them to 'stable-diffusion-webui/models/DiffPure'. Drop your picture with adversarial noise into the image input window and then just run the img2img process. Launchable at 4 GBs of GPU VRAM.
 
 ## Info
 
