@@ -223,6 +223,11 @@ class Script(scripts.Script):
         args['num_sub'] = 1000
         args['adv_eps'] = 0.07
 
+        outdir = os.path.join(opts.outdir_img2img_samples, 'DiffPure')
+        outdir = os.path.join(os.getcwd(), outdir)
+
+        args['log_dir'] = outdir
+
         args = SimpleNamespace(**args)
 
         model = SDE_Adv_Model(args, config)
