@@ -4,7 +4,9 @@
 
 **Auto1111** port of NVlab's adversarial purification method that uses the forward and reverse processes of diffusion models to remove adversarial perturbations.
 
-**WIP**: the script is installable and launchable, but not yet tested by me with a pretrained model. Stay tuned.
+![EjQg3SmkKAc](https://github.com/kabachuha/sd-webui-diffpure/assets/14872007/9daede00-8e20-4915-a3eb-c2e636bdaf44)
+
+Sort of working
 
 ## How to use?
 
