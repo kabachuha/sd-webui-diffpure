@@ -247,7 +247,7 @@ class Script(scripts.Script):
         transform = transforms.Compose([
             transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),
-            transforms.Normalize(mean, std)
+            #transforms.Normalize(mean, std)
         ])
 
         output_images = []
