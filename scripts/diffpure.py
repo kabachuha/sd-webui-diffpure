@@ -249,13 +249,13 @@ class Script(scripts.Script):
 
         for pic in tqdm(pics, 'Processing pics'):
             # PIL -> Tensor
-            img = transform((pic))
+            img = transform((pic)).unsqueeze(0)
 
             img = model(img)
 
             transform_back = transforms.ToPILImage()
 
-            img = transform_back(img)
+            img = transform_back(img.squeeze(0))
 
             output_images += img
 
