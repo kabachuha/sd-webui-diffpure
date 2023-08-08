@@ -16,3 +16,7 @@ ninja
 foolbox
 torchsde
 git+https://github.com/RobustBench/robustbench.git
+h5py
+torch-fidelity
+lpips
+pytorch-ignite
